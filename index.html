@@ -1,13 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Agon</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Supabase library -->
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div id="app">
 
+    <!-- Stress bar on the left -->
+    <div id="stress-bar-container">
+      <div id="stress-bar-track">
+        <div id="stress-bar-fill"></div>
+      </div>
+      <div id="stress-critical" class="hidden">Critical</div>
+    </div>
+
+    <!-- Main content -->
+    <div id="main">
+      <header id="header">
+        <h1>Agon</h1>
+
+        <!-- Two-step task input -->
+        <div id="global-input">
+          <div id="input-row">
+            <input id="dashboard-input" type="text" maxlength="1"
+              autocomplete="off" spellcheck="false" placeholder="?" />
+            <span class="separator">/</span>
+            <input id="task-input" type="text"
+              autocomplete="off" placeholder="Add task..." />
+          </div>
+          <!-- Shortcut buttons (rendered by JS) -->
+          <div id="shortcut-bar"></div>
+        </div>
+      </header>
+
+      <!-- Dashboard columns (rendered by JS) -->
+      <div id="columns-container"></div>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
