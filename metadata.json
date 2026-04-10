@@ -1,0 +1,5 @@
+{
+  "name": "Agon",
+  "description": "A minimalist task manager with a stress gauge and drag-and-drop dashboards.",
+  "requestFramePermissions": []
+}
