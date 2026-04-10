@@ -3,8 +3,8 @@
 // =========================================================
 // Paste your credentials from: supabase.com → project → Settings → API
 
-const SUPABASE_URL     = 'https://your-project-id.supabase.co';
-const SUPABASE_ANON_KEY = 'your-anon-key-here';
+const SUPABASE_URL     = https://wjygnaarjsqsjrtmngrv.supabase.co;
+const SUPABASE_ANON_KEY = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6IndqeWduYWFyanNxc2pydG1uZ3J2Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzU3ODcwOTUsImV4cCI6MjA5MTM2MzA5NX0.cXNfrgj0hDb5MpgRamcLhCxn8K1YyHmtFX0woo7iiZ4;
 
 const db = window.supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
 
